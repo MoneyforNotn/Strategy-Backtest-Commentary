@@ -9,11 +9,15 @@
 
 # to-do
 ##
-strategy list/metric database?
-table of cont
-theory behind market data & strategy (mean-rev, moment, universe/single stock.. 
+strategy list/metric database?  
+table of cont  
+theory behind market data & strategy (mean-rev, moment, universe/single stock..   
 backtest methods explain (backtesting.py, backtest.py, numpy  also panda_ta, talib
-Resources, useful learning paths, credits?
+ 
+
+performance metric table+links
+Backtest tool table+links
+Resources, useful learning paths, credits? 
 
 
 
