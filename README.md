@@ -1,3 +1,4 @@
+![alt](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/develop/assets/sbc.header.jpg)
 
 ## Introduction
 
@@ -88,7 +89,7 @@ Seperate file/folder to be designated for resources, learning paths, tools, refe
 > Bruce Lee
 
 ![alttt](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/develop/assets/sbc.image.ai.jpg)
-
+![altt](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/develop/assets/sbc.tapattern.png)
 
 
 
