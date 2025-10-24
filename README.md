@@ -2,14 +2,14 @@
 
 ## Introduction
 
-There is an ambiguous line between what can be confidently inferred from a backtest and what is simply a reflection of random market movements. The strength of a trend is best identified by various stress testing across broad datasets.
+There is an ambiguous line between what can be confidently inferred from a backtest and what is simply a reflection of random market movements. The strength of a trend is best identified by various stress testing across broad sets of data.
 
 ### Vision
 
-The vision for this repository is to store a comprehensive annotated collection of analyzed trading systems, backtesting frameworks,  concepts, and ideas coded in Python Jupyter Notebook. Chapters in this repository cover various concepts, utilize multiple backtesting libraries, and employ several ways to validate testing. Most entry signals rely on price/volume indicators and measurable technical analysis.
+The vision for this repository is to store a comprehensive annotated collection of analyzed trading systems, backtesting frameworks,  concepts, and ideas coded in Python Jupyter Notebook. Chapters in this repository cover various concepts, utilize multiple backtesting libraries, and employ several ways to validate testing. Most trading systems rely solely on price/volume indicators which can be quantifiable, replicable, and measured.
 
  ***Why code it?***  
- Algorithmic trading (or backtesting) offers speed, precision, and consistency beyond human capabilities. Code is an invaluable tool for creating and combining indicators into easily adjustable entry signals and live visualization comparison of performance metrics/benchmark.  
+ Algorithmic trading (and backtesting) offers speed, precision, and consistency beyond human capabilities. Code is an invaluable tool for defining and combining indicators into easily adjustable entry signals and creating live visualization comparison of performance metrics/benchmark.  
 
 ## Project list
  > [!TIP]
