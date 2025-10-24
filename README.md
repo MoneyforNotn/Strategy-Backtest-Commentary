@@ -11,8 +11,13 @@ The vision for this repository is to store a comprehensive annotated collection 
  ***Why code it?***  
  Algorithmic trading (or backtesting) offers speed, precision, and consistency beyond human capabilities. Code is an invaluable tool for creating and combining indicators into easily adjustable entry signals and live visualization comparison of performance metrics/benchmark.  
 
+## Project list
  > [!TIP]
-> Find highlighted comments in every project for quick summary of concepts and analysis. Color scale indicates key findings, limitations, and improvements.
+> Find highlighted comments in every project for quick summary of concepts and analysis. Color scales indicate key findings, limitations, and improvements.
+
+**Strategy-Backtest-Commentary**  
+001-MA Crossover_______Simple trend-following system aimed to reduce market drawdowns                                         
+002-
 
 ### **Strategy concepts & trading ideas**
 
@@ -22,7 +27,7 @@ The vision for this repository is to store a comprehensive annotated collection 
 | Mutli-asset |  | Backtest trading a universe of assets, 1% of equity, sl - Idea; (if not taking signals but holding and rebalancing) rank strenght of signal and buy one or few top ranked |
 | Random Entry|   | Random entry & direction ... is it possible to beat the market with only good risk management (position sizing, atr sl) |
 | Quantitative Momentum | | [The Quantitative Momentum Investing Philosophy](https://alphaarchitect.com/wp-content/uploads/2021/08/The_Quantitative_Momentum_Investing_Philosophy.pdf) by Jack Vogel, Ph.D. - ranks stocks by momentum and trend strenght, rebalanced quaterly |
-| Year High or 100 Day High||Buy stock from a universe if reaches yearly high (250/100/other period lookback), sell at 10% gain|
+| Year High or 100 Day High||Enter position (from a universe of assets) if price reaches yearly high (250/100/other period lookback), sell at 10% gain|
 ||||
 
 
@@ -75,20 +80,18 @@ The vision for this repository is to store a comprehensive annotated collection 
 > [!IMPORTANT]
 > This repository is in early stage of production, contribution etc. to be added  
   
-Interested in imporovement ideas, feedback, contributions
+Interested in improvement ideas, feedback, contributions
 
 
 
 ## Credits 
 
-While most work is authentic, some studies employ open-source code by online traders (all scripts are credited and accompanied by original author's license)  
+Though most work is authentic, some studies employ open-source code by online traders (all scripts are credited and accompanied by author's original license)  
 
-Seperate file/folder to be designated for resources, learning paths, tools, references
+* create seperate file/folder to be designated for resources, learning paths, tools, references
 
-
+***
 # 𝕄𝕠𝕟𝕖𝕪𝕗𝕠𝕣ℕ𝕠𝕥𝕟
-
-
 
 > "Absorb what is useful, discard what is not, add what is uniquely your own. 
 >
