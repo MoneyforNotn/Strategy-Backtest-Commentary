@@ -9,7 +9,10 @@ There is an ambiguous line between what can be confidently inferred from a backt
 The vision for this repository is to store a comprehensive annotated collection of analyzed trading systems, backtesting frameworks,  concepts, and ideas coded in Python Jupyter Notebook. Chapters in this repository cover various concepts, utilize multiple backtesting libraries, and employ several ways to validate testing. Most entry signals rely on price/volume indicators and measurable technical analysis.
 
  ***Why code it?***  
- Algorithmic trading (or backtesting) offers speed, precision, and consistency beyond human capabilities. Code is an invaluable tool for creating and combining indicators into easily adjustable entry signals and live visualization comparison of performance metrics/benchmark. 
+ Algorithmic trading (or backtesting) offers speed, precision, and consistency beyond human capabilities. Code is an invaluable tool for creating and combining indicators into easily adjustable entry signals and live visualization comparison of performance metrics/benchmark.  
+
+ > [!TIP]
+> Find highlighted comments in every project for quick summary of concepts and analysis. Color scale indicates key findings, limitations, and improvements.
 
 ### **Strategy concepts & trading ideas**
 
