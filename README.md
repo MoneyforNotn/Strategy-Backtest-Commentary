@@ -1,4 +1,4 @@
-![alt](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/develop/assets/sbc.header.jpg)
+![alt](develop/assets/stc.header.jpg)
 
 ## Introduction
 
