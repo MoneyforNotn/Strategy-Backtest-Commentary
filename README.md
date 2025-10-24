@@ -20,6 +20,7 @@ The vision for this repository is to store a comprehensive annotated collection 
 | Random Entry|   | Random entry & direction ... is it possible to beat the market with only good risk management (position sizing, atr sl) |
 | Quantitative Momentum | | [The Quantitative Momentum Investing Philosophy](https://alphaarchitect.com/wp-content/uploads/2021/08/The_Quantitative_Momentum_Investing_Philosophy.pdf) by Jack Vogel, Ph.D. - ranks stocks by momentum and trend strenght, rebalanced quaterly |
 | Year High or 100 Day High||Buy stock from a universe if reaches yearly high (250/100/other period lookback), sell at 10% gain|
+||||
 
 
 ### **Backtesting libraries & tools**
@@ -27,12 +28,13 @@ The vision for this repository is to store a comprehensive annotated collection 
 
 | Backtestesting tool                 | Documentation | Example         | Description                     |
 |:------------------------|---------|--------------------------------------|---------------------------------|
-| *numpy* (daily returns)              |         |  [tryyy](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/)| Storing data in arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
+| *numpy* (daily returns)  |  [Numpy guide](https://numpy.org/devdocs/user/index.html)    |  [tryyy](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/)| Storing data in arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
 | backtesting.py      |  [kernc.github.io](https://kernc.github.io/backtesting.py/)     ||Popular Python framework for inferring viability of trading strategies on historical data |
 | Backtrader     |[backtrader.com](https://www.backtrader.com/)   |                | Write an reusable trading strategies, indicators, performance visualization|
 | VectorBT  |   [vectorbt.pro](https://vectorbt.pro/documentation/fundamentals/)                        | | Ability to combine multiple strategy instances into a single multi-dimensional array, enabling highly efficient data processing  |
 | zipline        | [zipline-trader](https://zipline-trader.readthedocs.io/en/latest/backtest.html) |                                             | Backtesting/trading program compatible with Interactive Brokers and Alpaca |
 | *build your own?* | | | Reliability, control, scale, independence,  |
+|||||
 
 
 ### **Testing methods & approaches**
@@ -44,7 +46,7 @@ The vision for this repository is to store a comprehensive annotated collection 
 | Multi-run optimization      |    |                    | Cross-parameter backtesting - allows for many tests with many entry signal combinations |
 | Walk-forward                |   |                | Finding optimal *in-sample* trading parameters and checking the performance in the following time period for out-of-sample results |
 | Monte Carlo simulations  |    |                                               | Helps assess strategy's robustness by randomizing simulation parameters & inputs (trade sequence, skip n trades) |
-|         |    |                                             |  |
+|         |    |          |  |
 | *combination ?* | | | examine how the performance/robustness of a strategy changes across assets |
 
 
@@ -62,13 +64,14 @@ The vision for this repository is to store a comprehensive annotated collection 
 | WVAP|||
 | Bollinger Bands |||  
 | PSAR |||
-
+||||
 
 
 
 ## Contributing
 > [!IMPORTANT]
-> This repository is in early stage of production, contribution etc. to be added 
+> This repository is in early stage of production, contribution etc. to be added  
+  
 Interested in imporovement ideas, feedback, contributions
 
 
