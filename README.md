@@ -16,8 +16,9 @@ The vision for this repository is to store a comprehensive annotated collection 
 > Find highlighted comments in every project for quick summary of concepts and analysis. Color scales indicate key findings, limitations, and improvements.
 
 **Strategy-Backtest-Commentary**  
-001-MA Crossover_______Simple trend-following system aimed to reduce market drawdowns                                         
-002-
+001-MA Crossover_______Simple trend-following system aimed to reduce drawdowns tested on SPX daily prices  
+002-  
+003-
 
 ### **Strategy concepts & trading ideas**
 
@@ -36,7 +37,7 @@ The vision for this repository is to store a comprehensive annotated collection 
 
 | Backtestesting tool                 | Documentation | Example         | Description                     |
 |:------------------------|---------|--------------------------------------|---------------------------------|
-| *numpy* (daily returns)  |  [Numpy guide](https://numpy.org/devdocs/user/index.html)    |  [tryyy](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/)| Storing data in arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
+| *NumPy* (daily returns)  |  [NumPy guide](https://numpy.org/devdocs/user/index.html)    |  [tryyy](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/)| Storing data in arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
 | backtesting.py      |  [kernc.github.io](https://kernc.github.io/backtesting.py/)     ||Popular Python framework for inferring viability of trading strategies on historical data |
 | Backtrader     |[backtrader.com](https://www.backtrader.com/)   |                | Write an reusable trading strategies, indicators, performance visualization|
 | VectorBT  |   [vectorbt.pro](https://vectorbt.pro/documentation/fundamentals/)                        | | Ability to combine multiple strategy instances into a single multi-dimensional array, enabling highly efficient data processing  |
@@ -48,7 +49,7 @@ The vision for this repository is to store a comprehensive annotated collection 
 ### **Testing methods & approaches**
 
 
-| Testing method                | Documentation | Example         | Description                     |
+| Testing method                | Documentation? | Example         | Description                     |
 |:------------------------|---------|--------------------------------------|---------------------------------|
 | Single-run automated        |   |  | python arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
 | Multi-run optimization      |    |                    | Cross-parameter backtesting - allows for many tests with many entry signal combinations |
@@ -68,6 +69,7 @@ The vision for this repository is to store a comprehensive annotated collection 
 | Moving Average  |     |                    |  |
 | RSI     |   |                |    |
 | (A)TR |||
+| Market Open|||
 | MACD |||
 | WVAP|||
 | Bollinger Bands |||  
@@ -97,10 +99,13 @@ Though most work is authentic, some studies employ open-source code by online tr
 >
 > Bruce Lee
 
-![alttt](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/develop/assets/sbc.image.ai.jpg)
-![altt](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/develop/assets/sbc.tapattern.png)
 
-
+<p align="center">
+  <img src="https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/develop/assets/sbc.image.ai.jpg">
+</p>
+<p align="center">
+  <img src="https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/develop/assets/sbc.tapattern.png">
+</p>
 
 ### to-do
 add:  
