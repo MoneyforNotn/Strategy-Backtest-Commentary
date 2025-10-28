@@ -2,30 +2,35 @@
 
 ## Introduction
 
-There is an ambiguous line between what can be confidently inferred from a backtest and what is simply a reflection of random market movements. The strength of a trend is best identified by various stress testing across broad sets of data.
+There is an ambiguous line between what can be confidently inferred from a backtest and what is simply a reflection of random market movements. The strength of a trend is best identified through various stress testing methods applied across broad data sets.
 
 ### Vision
 
 The vision for this repository is to store a comprehensive annotated collection of analyzed trading systems, backtesting frameworks,  concepts, and ideas coded in Python Jupyter Notebook. Chapters in this repository cover various concepts, utilize multiple backtesting libraries, and employ several ways to validate testing. Most trading systems rely solely on price/volume indicators which can be quantifiable, replicable, and measured.
 
- ***Why code it?***  
- Algorithmic trading (and backtesting) offers speed, precision, and consistency beyond human capabilities. Code is an invaluable tool for defining and combining indicators into easily adjustable entry signals and creating live visualization comparison of performance metrics/benchmark.  
+ ***Backtesting***    
+Backtesting is a technique used in trading and investing to assess the performance of a trading strategy or investment approach using historical market data. By applying specific predetermined rules and parameters, backtesting can offer traders valuable insights into potential profitability, risks, and comparisons with alternative strategies.
+ 
+
+  ***Why code it?***   
+Algorithmic trading (and backtesting) offers speed, precision, and consistency beyond human capabilities. Code is an invaluable tool for defining and combining indicators into easily adjustable entry signals and creating live visualization comparison of performance metrics/benchmarks.  
 
 ## Project list
  > [!TIP]
 > Find highlighted comments in every project for quick summary of concepts and analysis. Color scales indicate key findings, limitations, and improvements.
 
 **Strategy-Backtest-Commentary**  
-001-MA Crossover_______Simple trend-following system aimed to reduce drawdowns tested on SPX daily prices  
+001-MA Crossover_______Simple trend-following system aimed to reduce drawdowns tested on 30-year SPX daily data
 002-  
 003-
 
 ### **Strategy concepts & trading ideas**
 
 
-| Concept                 | Status                | Description, etc.                  |
+| Concept                 | Status                | Description, notes                  |
 |:------------------------|--------------------------------------------------------|---------------------|
-| Mutli-asset |  | Backtest trading a universe of assets, 1% of equity, sl - Idea; (if not taking signals but holding and rebalancing) rank strenght of signal and buy one or few top ranked |
+| Moving average optimization|| Can we validate entry parameters by optimizing across every relevant performance metric-theory, limitations  |
+| Mutli-asset backtest|  | Backtest trading a universe of assets, 1% of equity, sl - Idea; (if not taking signals but holding and rebalancing) rank strenght of signal and buy one or few top ranked |
 | Random Entry|   | Random entry & direction ... is it possible to beat the market with only good risk management (position sizing, atr sl) |
 | Quantitative Momentum | | [The Quantitative Momentum Investing Philosophy](https://alphaarchitect.com/wp-content/uploads/2021/08/The_Quantitative_Momentum_Investing_Philosophy.pdf) by Jack Vogel, Ph.D. - ranks stocks by momentum and trend strenght, rebalanced quaterly |
 | Year High or 100 Day High||Enter position (from a universe of assets) if price reaches yearly high (250/100/other period lookback), sell at 10% gain|
@@ -39,10 +44,10 @@ The vision for this repository is to store a comprehensive annotated collection 
 |:------------------------|---------|--------------------------------------|---------------------------------|
 | *NumPy* (daily returns)  |  [NumPy guide](https://numpy.org/devdocs/user/index.html)    |  [tryyy](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/)| Storing data in arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
 | backtesting.py      |  [kernc.github.io](https://kernc.github.io/backtesting.py/)     ||Popular Python framework for inferring viability of trading strategies on historical data |
-| Backtrader     |[backtrader.com](https://www.backtrader.com/)   |                | Write an reusable trading strategies, indicators, performance visualization|
+| Backtrader     |[backtrader.com](https://www.backtrader.com/)   |                | Write and reusable trading strategies, indicators, performance visualization|
 | VectorBT  |   [vectorbt.pro](https://vectorbt.pro/documentation/fundamentals/)                        | | Ability to combine multiple strategy instances into a single multi-dimensional array, enabling highly efficient data processing  |
 | zipline        | [zipline-trader](https://zipline-trader.readthedocs.io/en/latest/backtest.html) |                                             | Backtesting/trading program compatible with Interactive Brokers and Alpaca |
-| *build your own?* | | | Reliability, control, scale, independence,  |
+| *build your own?* | | | Reliability, control, scale, independence,  Possible starting point;[algotrading101blog](https://algotrading101.com/learn/build-my-own-custom-backtester-python/)   |
 |||||
 
 
@@ -56,7 +61,7 @@ The vision for this repository is to store a comprehensive annotated collection 
 | Walk-forward                |   |                | Finding optimal *in-sample* trading parameters and checking the performance in the following time period for out-of-sample results |
 | Monte Carlo simulations  |    |                                               | Helps assess strategy's robustness by randomizing simulation parameters & inputs (trade sequence, skip n trades) |
 |         |    |          |  |
-| *combination ?* | | | examine how the performance/robustness of a strategy changes across assets |
+| *combination ?* | | | Examine how the performance/robustness of a strategy changes across assets |
 
 
 
@@ -80,25 +85,20 @@ The vision for this repository is to store a comprehensive annotated collection 
 
 ## Contributing
 > [!IMPORTANT]
-> This repository is in early stage of production, contribution etc. to be added  
-  
-Interested in improvement ideas, feedback, contributions
-
-
+> This repository is in early stage of production, contribution etc. to be added (open to improvement ideas, feedback, contributions)
 
 ## Credits 
 
 Though most work is authentic, some studies employ open-source code by online traders (all scripts are credited and accompanied by author's original license)  
 
-* create seperate file/folder to be designated for resources, learning paths, tools, references
+*create seperate file/folder to be designated for resources, learning paths, tools, references
 
 ***
 # 𝕄𝕠𝕟𝕖𝕪𝕗𝕠𝕣ℕ𝕠𝕥𝕟
 
-> "Absorb what is useful, discard what is not, add what is uniquely your own. 
+> "Absorb what is useful, discard what is not, add what is uniquely your own"
 >
 > Bruce Lee
-
 
 <p align="center">
   <img src="https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/develop/assets/sbc.image.ai.jpg">
@@ -107,15 +107,17 @@ Though most work is authentic, some studies employ open-source code by online tr
   <img src="https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/develop/assets/sbc.tapattern.png">
 </p>
 
-### to-do
-add:  
-credits  
-resources, references
- 
+> "As far as we can discern, the sole purpose of human existence is to kindle a light in the darkness of mere being"
+> 
+> Carl Jung
 
-performance metric table+links
-Backtest tool table+links
-Resources, useful learning paths, credits? 
+
+### develop notes
+add:  
+resources, learning tools references, credits  
+
+
+
 
 
 
