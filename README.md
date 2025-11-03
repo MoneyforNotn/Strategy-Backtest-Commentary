@@ -2,7 +2,7 @@
 
 ## Introduction
 
-There is an ambiguous line between what can be confidently inferred from a backtest and what is simply a reflection of random market movements. The strength of a trend is best identified through various stress testing methods applied across broad data sets.
+There is an ambiguous line between what can be confidently inferred from a backtest and what is simply a reflection of random market movements. The strength of a trend is best identified through various stress testing methods applied across broad sets of data.
 
 ### Vision
 
@@ -29,7 +29,7 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 
 | Concept                 | Status                | Description, notes                  |
 |:------------------------|--------------------------------------------------------|---------------------|
-| Moving average optimization|| Can we validate entry parameters by optimizing across every relevant performance metric-theory, limitations  |
+| Moving average optimization|[001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)| Can we validate entry parameters by optimizing across every relevant performance metric-theory, limitations  |
 | Mutli-asset backtest|  | Backtest trading a universe of assets, 1% of equity, sl - Idea; (if not taking signals but holding and rebalancing) rank strenght of signal and buy one or few top ranked |
 | Random Entry|   | Random entry & direction ... is it possible to beat the market with only good risk management (position sizing, atr sl) |
 | Quantitative Momentum | | [The Quantitative Momentum Investing Philosophy](https://alphaarchitect.com/wp-content/uploads/2021/08/The_Quantitative_Momentum_Investing_Philosophy.pdf) by Jack Vogel, Ph.D. - ranks stocks by momentum and trend strenght, rebalanced quaterly |
@@ -42,8 +42,8 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 
 | Backtestesting tool                 | Documentation | Example         | Description                     |
 |:------------------------|---------|--------------------------------------|---------------------------------|
-| *NumPy* (daily returns)  |  [NumPy guide](https://numpy.org/devdocs/user/index.html)    |  [tryyy](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/)| Storing data in arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
-| backtesting.py      |  [kernc.github.io](https://kernc.github.io/backtesting.py/)     ||Popular Python framework for inferring viability of trading strategies on historical data |
+| *NumPy* (daily returns)  |  [NumPy guide](https://numpy.org/devdocs/user/index.html)    |  [001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)| Storing data in arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
+| backtesting.py      |  [kernc.github.io](https://kernc.github.io/backtesting.py/)     |[001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)|Popular Python framework for inferring viability of trading strategies on historical data |
 | Backtrader     |[backtrader.com](https://www.backtrader.com/)   |                | Write and reusable trading strategies, indicators, performance visualization|
 | VectorBT  |   [vectorbt.pro](https://vectorbt.pro/documentation/fundamentals/)                        | | Ability to combine multiple strategy instances into a single multi-dimensional array, enabling highly efficient data processing  |
 | zipline        | [zipline-trader](https://zipline-trader.readthedocs.io/en/latest/backtest.html) |                                             | Backtesting/trading program compatible with Interactive Brokers and Alpaca |
@@ -56,8 +56,8 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 
 | Testing method                | Documentation? | Example         | Description                     |
 |:------------------------|---------|--------------------------------------|---------------------------------|
-| Single-run automated        |   |  | python arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
-| Multi-run optimization      |    |                    | Cross-parameter backtesting - allows for many tests with many entry signal combinations |
+| Single-run automated        |   |  [001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)| python arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
+| Multi-run optimization      |    |   [001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)  | Cross-parameter backtesting - allows for many tests with many entry signal combinations |
 | Walk-forward                |   |                | Finding optimal *in-sample* trading parameters and checking the performance in the following time period for out-of-sample results |
 | Monte Carlo simulations  |    |                                               | Helps assess strategy's robustness by randomizing simulation parameters & inputs (trade sequence, skip n trades) |
 |         |    |          |  |
@@ -71,7 +71,7 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 | Indicator                |  | Example         | Description                     |
 |:------------------------|---------|--------------------------------------|---------------------------------|
 | Volume |         |  | |
-| Moving Average  |     |                    |  |
+| Moving Average  |     |    [001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)|Many traders use moving averages as the basis for a trend-following trading system as a confirmation signal to another indicator |
 | RSI     |   |                |    |
 | (A)TR |||
 | Market Open|||
