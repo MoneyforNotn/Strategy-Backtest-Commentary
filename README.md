@@ -20,7 +20,7 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 > Find highlighted comments in every project for quick summary of concepts and analysis. Color scales indicate key findings, limitations, and improvements.
 
 **Strategy-Backtest-Commentary**  
-001-MA Crossover_______Simple trend-following system aimed to reduce drawdowns tested on 30-year SPX daily data
+001-MA Crossover______Simple trend-following optimization aimed to reduce drawdowns tested on 30-year SPX daily data  
 002-  
 003-
 
@@ -114,8 +114,8 @@ Though most work is authentic, some studies employ open-source code by online tr
 
 ### develop notes
 add:  
-resources, learning tools references, credits  
-
+resources, learning tools references, credits    
+hide unecessary outputs in .ipynb strategies
 
 
 
