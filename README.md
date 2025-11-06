@@ -6,7 +6,7 @@ There is an ambiguous line between what can be confidently inferred from a backt
 
 ### Vision
 
-The vision for this repository is to store a comprehensive annotated collection of analyzed trading systems, backtesting frameworks,  concepts, and ideas coded in Python Jupyter Notebook. Chapters in this repository cover various concepts, utilize multiple backtesting libraries, and employ several ways to validate testing. Most trading systems rely solely on price/volume indicators which can be quantifiable, replicable, and measured.
+The vision for this repository is to store a comprehensive annotated collection of trading systems, backtesting frameworks, strategy assessments, market theories, and ideas coded in Python Jupyter Notebook. Chapters in this repository cover various concepts, utilize multiple backtesting methods/libraries, and employ several ways to validate testing. Most trading systems are devised only from price/volume data indicators which are quantifiable, replicable, and can be measured.
 
  ***Backtesting***    
 Backtesting is a technique used in trading and investing to assess the performance of a trading strategy or investment approach using historical market data. By applying specific predetermined rules and parameters, backtesting can offer traders valuable insights into potential profitability, risks, and comparisons with alternative strategies.
