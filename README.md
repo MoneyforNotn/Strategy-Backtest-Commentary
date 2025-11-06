@@ -21,7 +21,7 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 
 **Strategy-Backtest-Commentary**  
 001-MA Crossover______Simple trend-following optimization aimed to reduce drawdowns tested on 30-year SPX daily data  
-002-  
+002-Random Entry______With robust risk-management and position sizing even random entries can be profitable (multi asset)
 003-
 
 ### **Strategy concepts & trading ideas**
@@ -106,6 +106,9 @@ Though most work is authentic, some studies employ open-source code by online tr
 <p align="center">
   <img src="https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/develop/assets/sbc.tapattern.png">
 </p>
+<p align="center">
+  <img src="https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/develop/assets/sbc.wb.jpg">
+</p>
 
 > "As far as we can discern, the sole purpose of human existence is to kindle a light in the darkness of mere being"
 > 
@@ -115,7 +118,25 @@ Though most work is authentic, some studies employ open-source code by online tr
 ### develop notes
 add:  
 resources, learning tools references, credits    
-hide unecessary outputs in .ipynb strategies
+hide unecessary outputs in .ipynb strategies  
+revisit- Algotrading: Position size – devils game
+
+credits/resrouces  
+Youtube - The art of trading  
+Youtube - Benjamin  
+Youtube - Quantconnect  
+Rapusa blog  
+Youtube  - Moon Dev  
+Algotrading101 blog  
+Alpha Vantage   
+Youtube – CodeTrading  
+Youtube – Martin Bell  
+Youtube - Neuralnine  
+Youtube - Chad Thrackray  
+Youtube - Lit Nomad  
+
+
+
 
 
 
