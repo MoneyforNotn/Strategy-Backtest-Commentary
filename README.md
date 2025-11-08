@@ -9,7 +9,7 @@ There is an ambiguous line between what can be confidently inferred from a backt
 The vision for this repository is to store a comprehensive annotated collection of trading systems, backtesting frameworks, strategy assessments, market theories, and ideas coded in Python Jupyter Notebook. Chapters in this repository cover various concepts, utilize multiple backtesting methods/libraries, and employ several ways to validate testing. Most trading systems are devised only from price/volume data indicators which are quantifiable, replicable, and can be measured.
 
  ***Backtesting***    
-Backtesting is a technique used in trading and investing to assess the performance of a trading strategy or investment approach using historical market data. By applying specific predetermined rules and parameters, backtesting can offer traders valuable insights into potential profitability, risks, and comparisons with alternative strategies.
+Backtesting is a technique used in trading and investing to assess the performance of a trading strategy or investment approach using historical market data. By applying specific predetermined rules and parameters, backtesting can offer traders valuable insights into profitability potentials, risks and constrains, and perfomance comparisons to alternative strategies.
  
 
   ***Why code it?***   
@@ -21,8 +21,9 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 
 **Strategy-Backtest-Commentary**  
 001-MA Crossover______Simple trend-following optimization aimed to reduce drawdowns tested on 30-year SPX daily data  
-002-Random Entry______With robust risk-management and position sizing even random entries can be profitable (multi asset)
-003-
+002-Random Entry______With robust risk-management and position sizing even random entries can be profitable (multi asset)  
+003-  
+004-
 
 ### **Strategy concepts & trading ideas**
 
@@ -30,10 +31,11 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 | Concept                 | Status                | Description, notes                  |
 |:------------------------|--------------------------------------------------------|---------------------|
 | Moving average optimization|[001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)| Can we validate entry parameters by optimizing across every relevant performance metric-theory, limitations  |
-| Mutli-asset backtest|  | Backtest trading a universe of assets, 1% of equity, sl - Idea; (if not taking signals but holding and rebalancing) rank strenght of signal and buy one or few top ranked |
+| Mutli-asset backtest|  | Backtest trading a universe of assets, 1% of equity, sl - Idea; OR (if not taking signals but holding and rebalancing) rank strenght of signal and buy one or few top ranked |
 | Random Entry|   | Random entry & direction ... is it possible to beat the market with only good risk management (position sizing, atr sl) |
 | Quantitative Momentum | | [The Quantitative Momentum Investing Philosophy](https://alphaarchitect.com/wp-content/uploads/2021/08/The_Quantitative_Momentum_Investing_Philosophy.pdf) by Jack Vogel, Ph.D. - ranks stocks by momentum and trend strenght, rebalanced quaterly |
 | Year High or 100 Day High||Enter position (from a universe of assets) if price reaches yearly high (250/100/other period lookback), sell at 10% gain|
+| Break Out Indicator || Detect price break-outs by identifying trading range break-outs in combination with liquidity sweeps and n. of bars above/below MA|
 ||||
 
 
@@ -76,13 +78,25 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 | (A)TR |||
 | Market Open|||
 | MACD |||
-| WVAP|||
+| WVAP |||
 | Bollinger Bands |||  
 | PSAR |||
+| Beta |||
 ||||
 
+# EMH & Trading Philosophy
+The **Market Efficiency Theory** states that market prices tend to be perfectly reflective of all information in the market, implying that asset prices are always trading at their fair value. Thus, under a 'random walk', historical prices and volume data have no value in predicting future stock prices. In other words, 'technical analysis' is useless and trying to time the market is a fool's errand.  
 
+***Leading conclusions & assumtions:***
 
+> Changes in market prices are not always completely random
+
+> Investor psychology, time-varying investor preferences, over-reaction, under-reaction, transaction costs, informational constraints, and even widespread use of similar trading systems contribute to this nonrandomness
+
+> Trading systems can be developed to effectively exploit deviations from the random walk. Mechanical trading systems can be profitable, in part, because they are immune to greed and fear
+
+> Over-reaction is more prevalent for some types assets and time frames (suitable for *mean-reversion* systems), and under-reaction  is more prevalent in others(*momentum* systems)
+***
 ## Contributing
 > [!IMPORTANT]
 > This repository is in early stage of production, contribution etc. to be added (open to improvement ideas, feedback, contributions)
