@@ -85,17 +85,23 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 ||||
 
 # EMH & Trading Philosophy
-The **Market Efficiency Theory** states that market prices tend to be perfectly reflective of all information in the market, implying that asset prices are always trading at their fair value. Thus, under a 'random walk', historical prices and volume data have no value in predicting future stock prices. In other words, 'technical analysis' is useless and trying to time the market is a fool's errand.  
 
-***Leading conclusions & assumtions:***
+**Market Efficiency Theory** states that market prices tend to be perfectly reflective of all information in the market, implying that asset prices are always trading at their fair value. Thus, under a 'random walk' assumption, historical market and volume data have no value in predicting future stock prices. In other words, 'technical analysis' is useless and trying to time the market is a *loser's game*.
 
-> Changes in market prices are not always completely random
+**Adaptive Market view** suggests market efficiency isn't fixed, but it evolves with competition, conditions, and who controls the volume. 
+
+### **Leading conclusions & assumtions:**
+ 
+> The movement of market prices is not always completely random
 
 > Investor psychology, time-varying investor preferences, over-reaction, under-reaction, transaction costs, informational constraints, and even widespread use of similar trading systems contribute to this nonrandomness
 
 > Trading systems can be developed to effectively exploit deviations from the random walk. Mechanical trading systems can be profitable, in part, because they are immune to greed and fear
 
-> Over-reaction is more prevalent for some types assets and time frames (suitable for *mean-reversion* systems), and under-reaction  is more prevalent in others(*momentum* systems)
+> Over-reaction is more prevalent for some types assets and time frames (suitable for *mean-reversion* systems), and under-reaction  is more prevalent in others (*momentum* systems)
+
+> There are different ways to characterize risk, including volatility measured by standard deviation and the probability of experiencing a drawdown of a given size
+
 ***
 ## Contributing
 > [!IMPORTANT]
