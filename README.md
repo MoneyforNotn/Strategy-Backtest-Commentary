@@ -134,6 +134,8 @@ Though most work is authentic, some studies employ open-source code by online tr
 > 
 > Carl Jung
 
+> Wholeness is not something you create, it is something you notice. It's the quiet realization that nothing is actually missing, now.
+
 
 ### develop notes
 add:  
