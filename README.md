@@ -8,7 +8,7 @@ There is an ambiguous line between what can be confidently inferred from a backt
 
 The vision for this repository is to store a comprehensive annotated collection of trading systems, backtesting frameworks, strategy assessments, market theories, and ideas coded in Python Jupyter Notebook. Chapters in this repository cover various concepts, utilize multiple backtesting methods/libraries, and employ several ways to validate testing. Most trading systems are devised only from price/volume data indicators which are quantifiable, replicable, and can be measured.
 
- ***Backtesting***    
+ ***"Backtesting"***    
 Backtesting is a technique used in trading and investing to assess the performance of a trading strategy or investment approach using historical market data. By applying specific predetermined rules and parameters, backtesting can offer traders valuable insights into profitability potentials, risks and constrains, and perfomance comparisons to alternative strategies.
  
 
@@ -22,7 +22,7 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 **Strategy-Backtest-Commentary**  
 001-MA Crossover______Simple trend-following optimization aimed to reduce drawdowns tested on 30-year SPX daily data  
 002-Random Entry______With robust risk-management and position sizing even random entries can be profitable (multi asset)  
-003-  
+003-London Breakout___Designed to capitalize on the high liquidity and volatility of the FOREX market during the London session  
 004-
 
 ### **Strategy concepts & trading ideas**
