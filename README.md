@@ -58,8 +58,9 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 
 | Testing method                | Documentation? | Example         | Description                     |
 |:------------------------|---------|--------------------------------------|---------------------------------|
-| Single-run automated        |   |  [001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)| python arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
+| Single-run automated        |   |  [001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)| Python arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
 | Multi-run optimization      |    |   [001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)  | Cross-parameter backtesting - allows for many tests with many entry signal combinations |
+|Out-of-sample            |   | |Measures the generalization erorr by testing model on unseen data to prevent/spot overfitting|
 | Walk-forward                |   |                | Finding optimal *in-sample* trading parameters and checking the performance in the following time period for out-of-sample results |
 | Monte Carlo simulations  |    |                                               | Helps assess strategy's robustness by randomizing simulation parameters & inputs (trade sequence, skip n trades) |
 |         |    |          |  |
@@ -76,7 +77,8 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 | Moving Average  |     |    [001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)|Many traders use moving averages as the basis for a trend-following trading system as a confirmation signal to another indicator |
 | RSI     |   |                |    |
 | (A)TR |||
-| Market Open|||
+| Market Sessions |||
+||||
 | MACD |||
 | WVAP |||
 | Bollinger Bands |||  
