@@ -23,7 +23,8 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 001-MA Crossover______Simple trend-following optimization aimed to reduce drawdowns tested on 30-year SPX daily data  
 002-Random Entry______With robust risk-management and position sizing even random entries can be profitable (multi asset)  
 003-London Breakout___Designed to capitalize on the high liquidity and volatility of the FOREX market during the London session  
-004-
+004-Machine Learning__  
+005-
 
 ### **Strategy concepts & trading ideas**
 
@@ -31,13 +32,13 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 | Concept                 | Status                | Description, notes                  |
 |:------------------------|--------------------------------------------------------|---------------------|
 | Moving average optimization|[001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)| Can we validate entry parameters by optimizing across every relevant performance metric-theory, limitations  |
-| Mutli-asset backtest|  | Backtest trading a universe of assets, 1% of equity, sl - Idea; OR (if not taking signals but holding and rebalancing) rank strenght of signal and buy one or few top ranked |
-| Random Entry|   | Random entry & direction ... is it possible to beat the market with only good risk management (position sizing, atr sl) |
+| Mutli-asset backtest|[002-Random Entry](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/002%20-%20Random%20Entry%20%22Coin%20Flip%22%20Strategy.ipynb)| Backtest trading a universe of assets, 1% of equity, sl - Idea; OR (if not taking signals but holding and rebalancing) rank strenght of signal and buy one or few top ranked |
+| Random Entry|[002-Random Entry](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/002%20-%20Random%20Entry%20%22Coin%20Flip%22%20Strategy.ipynb)| Random entry & direction ... is it possible to beat the market with only good risk management (position sizing, atr sl) |
 | Quantitative Momentum | | [The Quantitative Momentum Investing Philosophy](https://alphaarchitect.com/wp-content/uploads/2021/08/The_Quantitative_Momentum_Investing_Philosophy.pdf) by Jack Vogel, Ph.D. - ranks stocks by momentum and trend strenght, rebalanced quaterly |
 | Year High or 100 Day High||Enter position (from a universe of assets) if price reaches yearly high (250/100/other period lookback), sell at 10% gain|
+|London session breakout|[003-London Breakout](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/003%20-%20London%20Breakout%20FX%20Strategy.ipynb)|Capitalize on the London trading session’s high liquidity and volatility following price 'breakouts' (from the Asian session's high/low)|
 | Break Out Indicator || Detect price break-outs by identifying trading range break-outs in combination with liquidity sweeps and n. of bars above/below MA|
 ||||
-
 
 ### **Backtesting libraries & tools**
 
@@ -45,7 +46,7 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 | Backtestesting tool                 | Documentation | Example         | Description                     |
 |:------------------------|---------|--------------------------------------|---------------------------------|
 | *NumPy* (daily returns)  |  [NumPy guide](https://numpy.org/devdocs/user/index.html)    |  [001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)| Storing data in arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
-| backtesting.py      |  [kernc.github.io](https://kernc.github.io/backtesting.py/)     |[001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)|Popular Python framework for inferring viability of trading strategies on historical data |
+| backtesting.py      |  [kernc.github.io](https://kernc.github.io/backtesting.py/)     |[001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb), [002-Random Entry](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/002%20-%20Random%20Entry%20%22Coin%20Flip%22%20Strategy.ipynb), [003-London Breakout](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/003%20-%20London%20Breakout%20FX%20Strategy.ipynb)|Popular Python framework for inferring viability of trading strategies on historical data |
 | Backtrader     |[backtrader.com](https://www.backtrader.com/)   |                | Write and reusable trading strategies, indicators, performance visualization|
 | VectorBT  |   [vectorbt.pro](https://vectorbt.pro/documentation/fundamentals/)                        | | Ability to combine multiple strategy instances into a single multi-dimensional array, enabling highly efficient data processing  |
 | zipline        | [zipline-trader](https://zipline-trader.readthedocs.io/en/latest/backtest.html) |                                             | Backtesting/trading program compatible with Interactive Brokers and Alpaca |
@@ -60,7 +61,7 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 |:------------------------|---------|--------------------------------------|---------------------------------|
 | Single-run automated        |   |  [001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)| Python arrays/matrices - calculating daily returns, benchmark drawdowns, strategy performance |
 | Multi-run optimization      |    |   [001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)  | Cross-parameter backtesting - allows for many tests with many entry signal combinations |
-|Out-of-sample            |   | |Measures the generalization erorr by testing model on unseen data to prevent/spot overfitting|
+|Out-of-sample            |   | [002-Random Entry](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/002%20-%20Random%20Entry%20%22Coin%20Flip%22%20Strategy.ipynb), [003-London Breakout](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/003%20-%20London%20Breakout%20FX%20Strategy.ipynb) |Measures the generalization erorr by testing model on unseen data to prevent/spot overfitting|
 | Walk-forward                |   |                | Finding optimal *in-sample* trading parameters and checking the performance in the following time period for out-of-sample results |
 | Monte Carlo simulations  |    |                                               | Helps assess strategy's robustness by randomizing simulation parameters & inputs (trade sequence, skip n trades) |
 |         |    |          |  |
@@ -74,16 +75,17 @@ Algorithmic trading (and backtesting) offers speed, precision, and consistency b
 | Indicator                |  | Example         | Description                     |
 |:------------------------|---------|--------------------------------------|---------------------------------|
 | Volume |         |  | |
-| Moving Average  |     |    [001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb)|Many traders use moving averages as the basis for a trend-following trading system as a confirmation signal to another indicator |
-| RSI     |   |                |    |
-| (A)TR |||
-| Market Sessions |||
+| Moving Average  |     |    [001-MA Crossover](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/001%20-%20MA%20Crossover%20Optimization.ipynb), [003-London Breakout](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/003%20-%20London%20Breakout%20FX%20Strategy.ipynb)|Many traders use moving averages as the basis for a trend-following trading system as a confirmation signal to another indicator |
+| RSI   |   |                |    |
+| (A)TR ||[002-Random Entry](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/002%20-%20Random%20Entry%20%22Coin%20Flip%22%20Strategy.ipynb)|
+| Market Sessions ||[003-London Breakout](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/003%20-%20London%20Breakout%20FX%20Strategy.ipynb)|
 ||||
 | MACD |||
 | WVAP |||
 | Bollinger Bands |||  
+|Price breakout||[003-London Breakout](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/003%20-%20London%20Breakout%20FX%20Strategy.ipynb)|
 | PSAR |||
-| Beta |||
+| Beta ||[002-Random Entry](https://github.com/MoneyforNotn/Strategy-Backtest-Commentary/blob/main/002%20-%20Random%20Entry%20%22Coin%20Flip%22%20Strategy.ipynb)|
 ||||
 
 # EMH & Trading Philosophy
